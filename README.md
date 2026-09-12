@@ -1,16 +1,73 @@
-# React + Vite
+# 🐾 Virtual Pet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple interactive virtual pet game built with **React** and **Redux Toolkit**. Take care of your pet by feeding, playing, sleeping, and healing it while keeping its health, hunger, energy, and coins under control.
 
-Currently, two official plugins are available:
+## 🎮 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🍖 Feed your pet to restore hunger
+* 🎾 Play with your pet
+* 😴 Let your pet sleep and recover energy
+* ❤️ Heal your pet using coins
+* ⚠️ Multiple pet statuses such as Hungry, Tired, and Sick
+* 🥀 Game-over state when the pet's health reaches 0
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React + Vite
+* Redux Toolkit
+* React-Redux
+* JavaScript
 
-## Expanding the ESLint configuration
+## 📚 What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was created to practice **Redux Toolkit with React** and understand how global state management works.
+
+Through this project, I practiced:
+
+* Creating a Redux store
+* Creating slices with `createSlice()`
+* Managing state with reducers
+* Reading Redux state using `useSelector()`
+* Updating Redux state using `useDispatch()`
+* Rendering dynamic data in React
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sahil-sheikh01/virtual-pet.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd virtual-pet
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 🐾 How to Play
+
+Keep your pet's stats healthy:
+
+* **Feed** → restores hunger and slightly improves health
+* **Play** → increases happiness while consuming hunger and energy
+* **Sleep** → restores energy
+* **Heal** → restores health at the cost of coins
+
+If hunger or energy becomes critically low, your pet's health can decrease.
+
+If health reaches `0`, the pet reaches the **"Rest in Peace 🥀"** state.
