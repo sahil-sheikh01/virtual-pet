@@ -1,4 +1,4 @@
-# 🐾 Virtual Pet
+# 🐾 Virtual Pet - Bruno
 
 A simple interactive virtual pet game built with **React** and **Redux Toolkit**. Take care of your pet by feeding, playing, sleeping, and healing it while keeping its health, hunger, energy, and coins under control.
 
@@ -64,10 +64,10 @@ Open the local URL provided by Vite in your browser.
 Keep your pet's stats healthy:
 
 * **Feed** → restores hunger and slightly improves health
-* **Play** → increases happiness while consuming hunger and energy
-* **Sleep** → restores energy
+* **Play** → increases health while consuming hunger and energy
+* **Sleep** → restores energy while increasing hunger
 * **Heal** → restores health at the cost of coins
 
-If hunger or energy becomes critically low, your pet's health can decrease.
+If hunger or energy reaches `0`, your pet's health can decrease while playing.
 
 If health reaches `0`, the pet reaches the **"Rest in Peace 🥀"** state.
