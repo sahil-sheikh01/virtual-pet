@@ -23,7 +23,7 @@ const petSlice = createSlice({
             }
 
             if(state.energy === 0){
-                state.energy = Math.max(state.health - 5, 0);
+                state.health = Math.max(state.health - 5, 0);
             }
 
             state.energy = Math.max(state.energy - 15, 0);
